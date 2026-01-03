@@ -2,8 +2,86 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Partage de corrigés – Prépa Maths</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- Styles généraux --- */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header, footer {
+      text-align: center;
+      background-color: #005b96;
+      color: white;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      margin: 0 0 5px 0;
+      font-size: 1.8em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1em;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    /* --- Liste des exercices --- */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+      padding: 10px 15px;
+      background-color: #f3f3f3;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    li:hover {
+      background-color: #e1e1e1;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #005b96;
+      font-weight: bold;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Barre de recherche --- */
+    #searchInput {
+      width: 100%;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
 
@@ -13,25 +91,43 @@
 </header>
 
 <section>
-<li><strong>Exercice 300</strong><br>✅ Corrigé : <a href="corriges/exo300.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 301</strong><br>✅ Corrigé : <a href="corriges/exo301.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 302</strong><br>✅ Corrigé : <a href="corriges/exo302.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 303</strong><br>✅ Corrigé : <a href="corriges/exo303.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 304</strong><br>✅ Corrigé : <a href="corriges/exo304.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 305</strong><br>✅ Corrigé : <a href="corriges/exo305.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 306</strong><br>✅ Corrigé : <a href="corriges/exo306.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 307</strong><br>✅ Corrigé : <a href="corriges/exo307.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 308</strong><br>✅ Corrigé : <a href="corriges/exo308.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 309</strong><br>✅ Corrigé : <a href="corriges/exo309.pdf" target="_blank">corrige</a></li>
-<li><strong>Exercice 310</strong><br>✅ Corrigé : <a href="corriges/exo310.pdf" target="_blank">corrige</a></li>
-<!-- ... -->
+  <!-- Barre de recherche -->
+  <input type="text" id="searchInput" placeholder="Rechercher un exercice...">
 
+  <ul id="exercisesList">
+    <li><strong>Exercice 300</strong> – ✅ Corrigé : <a href="corriges/exo300.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 301</strong> – ✅ Corrigé : <a href="corriges/exo301.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 302</strong> – ✅ Corrigé : <a href="corriges/exo302.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 303</strong> – ✅ Corrigé : <a href="corriges/exo303.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 304</strong> – ✅ Corrigé : <a href="corriges/exo304.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 305</strong> – ✅ Corrigé : <a href="corriges/exo305.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 306</strong> – ✅ Corrigé : <a href="corriges/exo306.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 307</strong> – ✅ Corrigé : <a href="corriges/exo307.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 308</strong> – ✅ Corrigé : <a href="corriges/exo308.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 309</strong> – ✅ Corrigé : <a href="corriges/exo309.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <li><strong>Exercice 310</strong> – ✅ Corrigé : <a href="corriges/exo310.pdf" target="_blank" rel="noopener noreferrer">corrige</a></li>
+    <!-- tu peux continuer ici -->
+  </ul>
 </section>
-
 
 <footer>
   <p>Site collaboratif – usage pédagogique</p>
 </footer>
+
+<!-- --- Script pour recherche rapide --- -->
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const exercisesList = document.getElementById('exercisesList');
+  const exercises = exercisesList.getElementsByTagName('li');
+
+  searchInput.addEventListener('input', function() {
+    const filter = searchInput.value.toLowerCase();
+    for (let i = 0; i < exercises.length; i++) {
+      const text = exercises[i].textContent.toLowerCase();
+      exercises[i].style.display = text.includes(filter) ? '' : 'none';
+    }
+  });
+</script>
 
 </body>
 </html>
